@@ -10,7 +10,7 @@ nums = [i for i in range(0, y + 1, 1)]
 for p in range(2, int(sqrt(y)) + 1, 1):
     if nums[p] != 0:
         i = p * p
-        while i <= x:
+        while i <= y:
             nums[i] = 0
             i += p
 
@@ -26,3 +26,4 @@ if prime[n] == x:
     print("YES")
 else:
     print("NO")
+
